@@ -1,1 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+button:hover {
+  background-color: white;
+}
+button:active {
+  border: black;
+}
