@@ -18,12 +18,7 @@ let generateExcuse = () => {
   let who = ["A dog", "A stranger", "A cat", "The squirrel", "A crow"];
   let action = ["stole my", "grabbed my", "ripped my", "pooped on my"];
   let what = ["homework", "lunch money", "backpack", "hat"];
-  let when = [
-    "this morning!",
-    "on the street!",
-    "in the park!",
-    "right outside the door!"
-  ];
+  let when = ["this morning!", "on the street!", "in the park!", "right outside the door!"];
 
   let whoIndx = Math.floor(Math.random() * who.length);
   let actIndx = Math.floor(Math.random() * action.length);
