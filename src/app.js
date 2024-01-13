@@ -11,7 +11,6 @@ window.onload = () => {
   document.querySelector("#button").addEventListener("click", () => {
     document.querySelector("#excuse").innerHTML = generateExcuse();
   });
-  console.log("Hello Rigo from the console!");
 };
 
 let generateExcuse = () => {
@@ -20,18 +19,11 @@ let generateExcuse = () => {
   let what = ["homework", "lunch money", "backpack", "hat"];
   let when = ["this morning!", "on the street!", "in the park!", "right outside the door!"];
 
-  let whoIndx = Math.floor(Math.random() * who.length);
-  let actIndx = Math.floor(Math.random() * action.length);
-  let whatIndx = Math.floor(Math.random() * what.length);
-  let whenIndx = Math.floor(Math.random() * when.length);
+  function random(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
 
   return (
-    who[whoIndx] +
-    " " +
-    action[actIndx] +
-    " " +
-    what[whatIndx] +
-    " " +
-    when[whenIndx]
+    random(who) + " " + random(action) + " " + random(what) + " " + random(when)
   );
 };
